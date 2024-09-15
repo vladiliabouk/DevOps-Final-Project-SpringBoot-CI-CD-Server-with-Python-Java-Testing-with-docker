@@ -71,13 +71,21 @@ Unit, integration, and exception tests.
 
 **Endpoints**
 GET /jobs: Retrieve all jobs.
-POST /jobs: Create a new job.
+
 GET /jobs/{id}: Retrieve a job by ID.
-PUT /jobs/{id}: Update a job.
-DELETE /jobs/{id}: Delete a job.
+
 GET /jobs/status/{status}: Retrieve jobs by status.
+
 GET /jobs/jobType/{jobType}: Retrieve jobs by job type.
+
 GET /jobs/date-range: Retrieve jobs by a date range.
+
+POST /jobs: Create a new job.
+
+PUT /jobs/{id}: Update a job.
+
+DELETE /jobs/{id}: Delete a job.
+
 
 **Testing**
 Unit Tests (JUnit):
@@ -99,9 +107,13 @@ Use of pytest for running tests.
 
 **Test Functions**
 test_get_all_jobs()
+
 test_create_job()
+
 test_get_job_by_id()
+
 test_update_job_status()
+
 test_delete_job()
 
 **Part 3: Docker Orchestration**
