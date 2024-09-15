@@ -60,15 +60,18 @@ Each part of the project incorporates essential DevOps practices and tools to cr
 **Part 1: DevOps Server**
 
 **Overview**
+
 This part involves developing a CI/CD automation server using Spring Boot. The server manages CI/CD jobs and provides endpoints for CRUD operations.
 
 **Features**
+
 Spring Boot project with dependencies: Spring Web, Spring Data JPA, H2 Database, Lombok.
 CRUD operations for CI/CD jobs.
 Integration with H2 Database.
 Unit, integration, and exception tests.
 
 **Endpoints**
+
 GET /jobs: Retrieve all jobs.
 
 GET /jobs/{id}: Retrieve a job by ID.
@@ -87,6 +90,7 @@ DELETE /jobs/{id}: Delete a job.
 
 
 **Testing**
+
 Unit Tests (JUnit):
 Test individual methods in the service class for specific input/output scenarios. Examples: testAddJob(), testGetJob().
 Parameterized Tests (@ParameterizedTest): Test methods with multiple input parameters. Examples: testAddJobWithVariousStatuses(), testGetJobByDifferentIds().
@@ -97,9 +101,11 @@ Integration Tests (@SpringBootTest): Test the interaction between multiple compo
 **Part 2: Python Tests**
 
 **Overview**
+
 This part involves creating Python tests to validate the functionality of the CI/CD server.
 
 **Features**
+
 Automated tests for endpoints.
 Logging configuration and fixtures.
 Use of pytest for running tests.
@@ -119,13 +125,16 @@ test_delete_job()
 **Part 3: Docker Orchestration**
 
 **Overview**
+
 This part involves orchestrating the CI/CD automation server and Python tests using Docker Compose.
 
 **Features**
+
 Docker Compose configuration for multiple services: Spring Boot application, Redis, PostgreSQL, Python tests.
 Custom networking and volume mappings.
 
 **Docker Compose Services**
+
 cd-server: Spring Boot application.
 redis: Caching service.
 db: PostgreSQL database.
