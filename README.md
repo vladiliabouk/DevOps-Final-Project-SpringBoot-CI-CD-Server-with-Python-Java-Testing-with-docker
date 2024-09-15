@@ -21,7 +21,7 @@ Each part of the project incorporates essential DevOps practices and tools to cr
 
 ## Project Structure
 
-- `server/`: Spring Boot application for CI/CD automation.
+- `server/`: Spring Boot application for CI/CD automation and Java tests.
 - `tester/`: Python tests for validating the server.
 - `docker/`: Dockerfiles and Docker Compose configuration.
 
