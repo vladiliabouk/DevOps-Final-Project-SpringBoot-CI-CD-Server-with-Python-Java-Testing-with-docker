@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Job Details</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>Job Details</h1>
+<table>
+    <tbody>
+    <tr>
+        <th>ID</th>
+        <td th:text="${job.id}"></td>
+    </tr>
+    <tr>
+        <th>Job Name</th>
+        <td th:text="${job.jobName}"></td>
+    </tr>
+    <tr>
+        <th>Job Type</th>
+        <td th:text="${job.jobType}"></td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td th:text="${job.status}"></td>
+    </tr>
+    <tr>
+        <th>Created At</th>
+        <td th:text="${job.createdAt}"></td>
+    </tr>
+    <tr>
+        <th>Updated At</th>
+        <td th:text="${job.updatedAt}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
