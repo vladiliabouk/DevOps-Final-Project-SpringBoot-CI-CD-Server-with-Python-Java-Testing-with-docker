@@ -17,8 +17,7 @@ Each part of the project incorporates essential DevOps practices and tools to cr
 3. [Part 1: DevOps Server](#part-1-devops-server)
 4. [Part 2: Python Tests](#part-2-python-tests)
 5. [Part 3: Docker Orchestration](#part-3-docker-orchestration)
-6. [Contributions](#contributions)
-7. [License](#license)
+
 
 ## Project Structure
 
